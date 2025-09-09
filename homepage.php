@@ -73,10 +73,10 @@
   <div class="carousel-container">
     <button class="carousel-btn prev">&#10094;</button> <!-- tambahin tombol kiri -->
     <div class="carousel">
-      <img src="fotohomepage/25SEDE.jpg" alt="">
-      <img src="fotohomepage/15LTCD.jpg" alt="">
-      <img src="fotohomepage/25DSIC.jpg" alt="">
-      <img src="fotohomepage/15JTBG.jpg" alt="">
+      <img src="fotohomepage/25DATL.jpg" alt="">
+      <img src="fotohomepage/imax.png" alt="">
+      <img src="fotohomepage/25PSUI.jpg" alt="">
+      <img src="fotohomepage/25CLRS.jpg" alt="">
     </div>
     <button class="carousel-btn next">&#10095;</button>
   </div>
