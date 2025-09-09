@@ -7,21 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="navbar">
-    <div class="logo">
-      <span>JEF Cinema</span>
-    </div>
-    <div class="auth-btn">
-      <button class="btn login">Log In</button>
-      <button class="btn signup">Sign Up</button>
-    </div>
-  </header>
+  <?php include './header.php'?>
 
   <section class="hero">
     <h1>FEEL THE MOMENTS BEYOND</h1>
     <div class="search-box">
       <input type="text" placeholder="Search">
-      <span class="search-icon">🔍</span>
+      <img src="fotohomepage/Vector.png" alt="search" class="search-icon">
     </div>
 
     <div class="menu-icons">
@@ -43,5 +35,52 @@
       </div>
     </div>
   </section>
+
+<div class="slider">
+  <div class="slides">
+    <div class="slide"><img src="fotohomepage/demonslaye1.png" alt="Demon Slayer"></div>
+    <div class="slide"><img src="fotohomepage/conjuring1.png" alt="Conjuring"></div>
+    <div class="slide"><img src="fotohomepage/Brosur_page-0001.jpg" alt="Foodiez"></div>
+  </div>
+
+  <!-- tombol navigasi -->
+  <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+  <a class="next" onclick="moveSlide(1)">&#10095;</a>
+</div>
+
+<div class="dots">
+  <span class="dot" onclick="currentSlide(0)"></span>
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+</div>
+
+<div class="movie-section">
+  <h2 class="section-title">Now Playing</h2>
+  <div class="carousel-container">
+    <button class="carousel-btn prev">&#10094;</button> <!-- tambahin tombol kiri -->
+    <div class="carousel">
+      <img src="fotohomepage/25SEDE.jpg" alt="">
+      <img src="fotohomepage/15LTCD.jpg" alt="">
+      <img src="fotohomepage/25DSIC.jpg" alt="">
+      <img src="fotohomepage/15JTBG.jpg" alt="">
+    </div>
+    <button class="carousel-btn next">&#10095;</button>
+  </div>
+</div>
+
+<div class="movie-section">
+  <h2 class="section-title">Now Playing</h2>
+  <div class="carousel-container">
+    <button class="carousel-btn prev">&#10094;</button> <!-- tambahin tombol kiri -->
+    <div class="carousel">
+      <img src="fotohomepage/25SEDE.jpg" alt="">
+      <img src="fotohomepage/15LTCD.jpg" alt="">
+      <img src="fotohomepage/25DSIC.jpg" alt="">
+      <img src="fotohomepage/15JTBG.jpg" alt="">
+    </div>
+    <button class="carousel-btn next">&#10095;</button>
+  </div>
+</div>
+
 </body>
 </html>
