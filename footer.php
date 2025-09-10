@@ -124,7 +124,7 @@
 
         <!-- Ikuti Kami -->
         <div class="footer-col">
-            <h3>Ikuti Kami</h3>
+            <h3>Follow Us</h3>
             <div class="social-media">
                 <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
                 <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Twitter_new_X_logo.png" alt="Twitter"></a>

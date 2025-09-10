@@ -28,20 +28,21 @@
     .logo {
         display: flex;
         align-items: center;
-        gap: 10px;
         text-decoration: none;
         color: white;
         font-size: 20px;
         font-weight: bold;
+        height: 55px;
     }
 
     /* Ukuran logo biar kecil */
     .logo img {
-        width: 45px;    /* <<< Logo lebih kecil */
-        height: 45px;
+        width: 35px;    /* <<< Logo lebih kecil */
+        height: 35px;
         object-fit: contain;
         border-radius: 8px;
-    }
+        margin-bottom: 18px;
+    }   
 
     /* Menu kanan */
     .menu-kanan {
@@ -93,8 +94,8 @@
     <div class="isi">
         <!-- Logo di kiri -->
         <a href="index.php" class="logo">
-            <img src="gambar/JEF.png" alt="Logo">
-            JEF Cinema
+            <img src="header&footer/JEF (2).png" alt="Logo">
+            Cinema
         </a>
 
         <!-- Menu di kanan -->
