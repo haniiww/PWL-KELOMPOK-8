@@ -6,6 +6,6 @@
 Website untuk membantu para pencinta movie dengan mudah mencari movie yang ingin di tonton dan membuat reservasi tempat duduk di bioskop pilihan tanpa ribet
 
 ## Member
- | Edward H.R. ; Pizzaguy897 | https://github.com/Pizzaman897 (Ketua kelompok 8, Back End Developer)
- | Forensya Hani ; haniiww | https://github.com/haniiww (Pembuat Github kelompok 8, Front End Developer)
- | Joey Jason Lee ; jaw1306 | https://github.com/jaw1306 (Desainer UI/UX kelompok 8)
+- Edward H.R. ; Pizzaguy897 | https://github.com/Pizzaman897 (Ketua kelompok 8, Back End Developer)
+- Forensya Hani ; haniiww | https://github.com/haniiww (Pembuat Github kelompok 8, Front End Developer)
+- Joey Jason Lee ; jaw1306 | https://github.com/jaw1306 (Desainer UI/UX kelompok 8)
