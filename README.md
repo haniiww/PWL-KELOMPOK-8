@@ -5,6 +5,8 @@
 
 Website untuk membantu para pencinta movie dengan mudah mencari movie yang ingin di tonton dan membuat reservasi tempat duduk di bioskop pilihan tanpa ribet
 
+## Instalasi
+
 ## Member
 - Edward H.R. ; Pizzaguy897 | https://github.com/Pizzaman897 (Ketua kelompok 8, Back End Developer)
 - Forensya Hani ; haniiww | https://github.com/haniiww (Pembuat Github kelompok 8, Front End Developer)
