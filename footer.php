@@ -96,7 +96,7 @@
         <div class="footer-col">
             <h3>Company</h3>
             <ul>
-                <li><a href="about.php">About Us</a></li>
+                <li><a href="about_us.php">About Us</a></li>
                 <li><a href="supported-devices.php">Supported Devices</a></li>
                 <li><a href="careers.php">Careers</a></li>
             </ul>
