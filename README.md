@@ -11,7 +11,8 @@ A website to help movie lovers easily find the movies they want to watch and mak
  <img width="418" height="396" alt="image" src="https://github.com/user-attachments/assets/1ae553cb-0958-48e9-addb-3533cac66b57" />
  
 2. Click the Download ZIP button.
-   <img width="394" height="40" alt="image" src="https://github.com/user-attachments/assets/2bbde0e9-b1e1-4f9f-bf86-16a6e9f40a7c" />
+
+<img width="394" height="40" alt="image" src="https://github.com/user-attachments/assets/2bbde0e9-b1e1-4f9f-bf86-16a6e9f40a7c" />
 
 ### Part 2 (running the code)
 1. Extract the ZIP file into a folder.
