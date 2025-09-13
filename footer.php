@@ -11,7 +11,7 @@
         display: flex;
         justify-content: center;
         align-items: flex-start;  /* <-- Biar semua kolom rata atas */
-        gap: 130px;               /* Jarak antar kolom */
+        gap: 90px;               /* Jarak antar kolom */
         flex-wrap: wrap;
         max-width: 1200px;
         margin: 0 auto;

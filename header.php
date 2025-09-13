@@ -1,5 +1,4 @@
 
-<!-- components/header.php -->
 <style>
     * {
         margin: 0;
@@ -24,7 +23,6 @@
         padding: 0 70px;
     }
 
-    /* Logo + teks */
     .logo {
         display: flex;
         align-items: center;
@@ -35,23 +33,20 @@
         height: 55px;
     }
 
-    /* Ukuran logo biar kecil */
     .logo img {
-        width: 35px;    /* <<< Logo lebih kecil */
+        width: 35px;   
         height: 35px;
         object-fit: contain;
         border-radius: 8px;
         margin-bottom: 18px;
     }   
 
-    /* Menu kanan */
     .menu-kanan {
         display: flex;
         align-items: center;
         gap: 20px;
     }
-
-    /* Tombol menu */
+    
     .menu a {
         color: white;
         text-decoration: none;
@@ -66,7 +61,6 @@
         transform: translateY(-2px);
     }
 
-    /* Tombol login & signup */
     .tombol-auth {
         display: flex;
         gap: 15px;
@@ -92,17 +86,15 @@
 
 <header class="header">
     <div class="isi">
-        <!-- Logo di kiri -->
         <a href="index.php" class="logo">
             <img src="header&footer/JEF (2).png" alt="Logo">
             Cinema
         </a>
 
-        <!-- Menu di kanan -->
         <div class="menu-kanan">
             <div class="tombol-auth">
-                <a href="login.php" class="btn btn-login">Login</a>
-                <a href="register.php" class="btn btn-signup">Sign Up</a>
+                <a href="logIn.php" class="btn btn-login">Login</a>
+                <a href="signup.php" class="btn btn-signup">Sign Up</a>
             </div>
         </div>
     </div>
