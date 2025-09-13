@@ -9,6 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+
+<div class="back-arrow" onclick="goBack()">
+  <a href="homepage.php">
+    <i class="fas fa-arrow-left"></i>
+  </a>
+</div>
+
 <div class="container">
   <div class="left-side">
     <div class="posters">

@@ -7,22 +7,19 @@
     <link rel="stylesheet" href="about_us.css">
 </head>
 <body>
-    <?php include './header.php'?>
 <!-- Hero Section -->
 <div class="hero-section">
+    <?php include './header.php'?>
     <div class="hero-content">
-                   <h1>AT THE HEART OF JEF CINEMA</h1>
-            <p>
-                With years of dedication in the cinema industry, JEF Cinema is committed to delivering exceptional facilities 
-                and an enjoyable movie-going experience at accessible prices. More than just a place to watch films, 
-                JEF Cinema serves as a second home where audiences can share moments with family and friends while enjoying 
-                unforgettable stories on the big screen—today, tomorrow, and beyond.
-            </p>
+        <h1>AT THE HEART OF JEF CINEMA</h1>
+        <p>
+            With years of dedication in the cinema industry, JEF Cinema is committed to delivering exceptional facilities and an enjoyable movie-going experience at accessible prices. More than just a place to watch films, JEF Cinema serves as a second home where audiences can share moments with family and friends while enjoying unforgettable stories on the big screen—today, tomorrow, and beyond.
+        </p>
     </div>
 </div>
 
-<div style="text-align:center; margin: 120px 0 120px 0; max-width: 600px; margin-left: auto; margin-right: auto;">
-    <h2 style="font-size:2.2rem; font-weight:800; letter-spacing:1px;">MORE THAN MOVIES, IT’S AN EXPERIENCE</h2>
+<div class="Motto">
+    <h2>MORE THAN MOVIES, IT’S AN EXPERIENCE</h2>
 </div>
 
 <!-- Vision -->
