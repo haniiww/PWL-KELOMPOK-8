@@ -1,10 +1,12 @@
     <!-- components/footer.php -->
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+    
     .footer { 
         margin: 0 auto;    
         padding: 40px 10px 10px;
         color: #fff;
-        font-family: Arial, sans-serif;
+        font-family: "poppins";
     }
 
     .footer-container {

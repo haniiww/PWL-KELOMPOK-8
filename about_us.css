@@ -1,15 +1,37 @@
-/* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #000;
 }
 
-body {
-    background-color: #000000;
-    color: white;
-    line-height: 1.6;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  color: #fff;
+}
+
+.container {
+  background: url("fotohomepage/background.png") repeat-x;
+  background-size: cover;
+  animation: movebg 40s linear infinite;
+}
+
+@keyframes movebg {
+  from { background-position: 0 0; }
+  to { background-position: -2000px 0; }
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* HERO SECTION */

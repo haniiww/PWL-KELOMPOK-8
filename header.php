@@ -1,5 +1,7 @@
 
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
     * {
         margin: 0;
         padding: 0;
@@ -8,7 +10,7 @@
 
     body {
         color: white;
-        font-family: Arial, sans-serif;
+        font-family: "poppins";
     }
 
     .header {
@@ -86,6 +88,8 @@
 
 <header class="header">
     <div class="isi">
+
+        <a href="homepage.php" class="logo">
         <a href="index.php" class="logo">
             <img src="header&footer/JEF (2).png" alt="Logo">
             Cinema
