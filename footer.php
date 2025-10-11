@@ -1,17 +1,19 @@
     <!-- components/footer.php -->
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+    
     .footer { 
         margin: 0 auto;    
         padding: 40px 10px 10px;
         color: #fff;
-        font-family: Arial, sans-serif;
+        font-family: "poppins";
     }
 
     .footer-container {
         display: flex;
         justify-content: center;
         align-items: flex-start;  /* <-- Biar semua kolom rata atas */
-        gap: 130px;               /* Jarak antar kolom */
+        gap: 90px;               /* Jarak antar kolom */
         flex-wrap: wrap;
         max-width: 1200px;
         margin: 0 auto;
@@ -138,7 +140,6 @@
         © 2025 JEF Cinema. Hak cipta dilindungi.  
     </div>
 </footer>
-
 
 
 

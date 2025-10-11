@@ -1,29 +1,51 @@
-/* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #000;
 }
 
-body {
-    background-color: #000000;
-    color: white;
-    line-height: 1.6;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  color: #fff;
+}
+
+.container {
+  background: url("fotohomepage/background.png") repeat-x;
+  background-size: cover;
+  animation: movebg 40s linear infinite;
+}
+
+@keyframes movebg {
+  from { background-position: 0 0; }
+  to { background-position: -2000px 0; }
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* HERO SECTION */
 .hero-section {
     position: relative;
     width: 100%;
-    height: 881px;
-    background: url('about_us/cnema1_page-0001.jpg') no-repeat center center;
+    height: 900px;
+    background: url('about_us/bg.png') no-repeat center center;
 }
 
 .hero-content {
     position: absolute;
-    top: 55%;   /* atur vertikal, makin besar makin ke bawah */
-    left: 8%;   /* atur horizontal, makin besar makin ke kanan */
+    top: 55%;   
+    left: 8%;   
     transform: translateY(-50%);
     color: white;
     max-width: 1000px;
@@ -31,27 +53,38 @@ body {
 }
 
 .hero-content h1 {
-    font-size: 4.8rem;
+    font-size: 3.2rem;
     font-weight: bold;
     line-height: 1.2;
     margin-bottom: 15px;
+    margin-right: 300px;
 }
 
 .hero-content p {
-    font-size:1.6rem;
+    font-size:1.5rem;
     line-height: 1.7;
     color: #e0e0e0;
     max-width: 900px;
-    font-style:thin;
+    font-weight: lighter;
+}
+
+.Motto {
+    text-align:center; 
+    margin: 120px 0 120px 0; 
+    max-width: 600px; margin-left: auto; 
+    margin-right: auto;
+    font-size:25px; 
+    font-weight:800; 
+    letter-spacing:1px
 }
 
 /* VISION */
 .vision {
-    margin: 50px auto;
+    margin: 50px;
     padding: 0;
     max-width: 1200px;
     border-radius: 16px;
-    background: linear-gradient(90deg, #B41616 0%, #4E0909 100%);
+    background: linear-gradient(120deg, #B41616 0%, #4E0909 100%);
     box-shadow: 0 4px 24px rgba(0,0,0,0.25);
 }
 
@@ -67,7 +100,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center; /* Ubah dari flex-start ke center */
+    align-items: center;
     height: 100%;
     margin-top: 10px;
 }
@@ -76,9 +109,8 @@ body {
     font-size: 3.2rem;
     font-weight: bold;
     color: #fff;
-    margin-bottom: 10px;
+    margin-bottom: 100px;
     letter-spacing: 1px;
-    /* Hapus align-self: center; */
 }
 
 .vision-title hr {
@@ -86,7 +118,6 @@ body {
     border: none;
     border-top: 3px solid #fff;
     margin: 0 auto;
-    /* Hapus align-self: center; */
 }
 
 .vision-desc {
@@ -102,12 +133,14 @@ body {
     margin-left: 40px;
     line-height: 1.5;
     text-align: left;
+    display: flex;
+    margin-top: 50px;
 }
 
 /* Mission */
 .mission {
-    max-width: 1240px;
-    margin: 160px auto;
+    max-width: 1200px;
+    margin: 90px 20px;
     padding: 0 20px;
 }
 
@@ -144,7 +177,7 @@ body {
     object-fit: cover;
     border-radius: 0;
     display: block;
-    
+    filter: brightness(70%);
 }
 
 .mission-card p {
@@ -154,17 +187,16 @@ body {
     width: 100%;
     font-size: 1rem;
     color: #fff;
-    padding: 16px 12px 12px 12px;
+    padding: 16px 12px 12px 20px;
     margin: 0;
     border-radius: 0 0 18px 18px;
-    text-align: center;
     z-index: 2;
     bottom: 32px;
 }
 
 /* Gallery */
 .gallery {
-    padding: 60px 20px;
+    padding: 20px 20px;
     text-align: center;
 }
 
@@ -177,7 +209,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 28px;
-    max-width: 1200px;
+    max-width: 1150px;
     margin: 0 auto;
 }
 
@@ -196,7 +228,7 @@ body {
 
 /* Highlight Banner */
 .highlight {
-    margin: 60px auto 0 auto;
+    margin: 100px auto 0 auto;
     max-width: 1200px;
     text-align: center;
 }
@@ -219,21 +251,25 @@ body {
     left: 40%;
     bottom: 0;
     transform: translateX(-50%);
-    font-size: 2.7rem;
+    font-size: 45px;
+    font-weight: lighter;
     color: #fff;
     padding: 18px 32px 16px 32px;
     border-radius: 0 0 18px 18px;
-    text-shadow: 0 2px 8px #000;
     margin-bottom: 20px;
     width: 90%;
     text-align: left;
     max-width: 900px;
-    font-style: thin;
 }
+
 .team {
     padding: 60px 0 40px 0;
     text-align: center;
     font-size: 2.0rem;
+}
+
+.team h2 {
+    margin-bottom: 40px;
 }
 
 .team-grid {
