@@ -33,18 +33,25 @@
         <i class="fa-solid fa-camera change-icon"></i>
         </div>
 
-        <div class="profile-info">
-        <h2 id="profileName">POPCORN121 <i class="fa-solid fa-pen edit-btn"></i></h2>
-        <p>6288242857370</p>
-        </div>
+    <div class="profile-info">
+    <h2 id="profileName">
+        POPCORN121 
+        <i class="fa-solid fa-pen edit-btn" id="editNameBtn"></i>
+    </h2>
+    <p>6288242857370</p>
     </div>
 
+
     <div class="popup" id="popup">
-        <div class="popup-content">
-            <h3>Edit Profile Name</h3>
-            <input type="text" id="newName" placeholder="Enter new name" maxlength="20">
-            <button id="saveName">Save</button>
+    <div class="popup-content">
+        <h3>Edit Profile Name</h3>
+        <input type="text" id="newName" placeholder="Enter new name" maxlength="20">
+        <div class="popup-buttons">
+        <button id="saveName">Save</button>
+        <button id="cancelPopup">Cancel</button>
         </div>
+    </div>
+    </div>
     </div>
 
     <div class="menu-container">

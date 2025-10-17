@@ -245,17 +245,16 @@ body {
 }
 
 /* ===== POPUP EDIT ===== */
-/* Popup overlay */
 .popup {
-  display: none; /* sembunyikan dulu */
+  display: none;
   position: fixed;
-  inset: 0; /* top, right, bottom, left: 0 */
+  inset: 0;
   background: rgba(0, 0, 0, 0.6);
   justify-content: center;
   align-items: center;
   z-index: 9999;
 }
-
+    
 /* Box popup */
 .popup-content {
   background: #111;
@@ -264,10 +263,8 @@ body {
   border-radius: 12px;
   text-align: center;
   width: 300px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }
 
-/* Input */
 .popup-content input {
   width: 100%;
   padding: 10px;
@@ -279,8 +276,14 @@ body {
   color: white;
 }
 
-/* Button */
+.popup-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
 .popup-content button {
+  flex: 1;
   padding: 10px 25px;
   background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
   border: none;
@@ -292,4 +295,11 @@ body {
 
 .popup-content button:hover {
   opacity: 0.8;
+}
+
+#cancelPopup {
+  background: #444;
+}
+#cancelPopup:hover {
+  background: #666;
 }

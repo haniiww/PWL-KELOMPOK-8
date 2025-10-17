@@ -1,13 +1,14 @@
 const popup = document.getElementById("popup");
-const editBtn = document.getElementById("editNameBtn"); // pastikan ID tombol edit sesuai
+const editBtn = document.getElementById("editNameBtn");
 const saveBtn = document.getElementById("saveName");
+const cancelBtn = document.getElementById("cancelPopup");
 const nameDisplay = document.getElementById("profileName");
 const input = document.getElementById("newName");
 
 // buka popup
 editBtn.addEventListener("click", () => {
   popup.style.display = "flex";
-  input.value = nameDisplay.textContent;
+  input.value = nameDisplay.textContent.trim();
   input.focus();
 });
 
@@ -23,7 +24,12 @@ saveBtn.addEventListener("click", () => {
     return;
   }
 
-  nameDisplay.textContent = newName;
+  nameDisplay.childNodes[0].textContent = newName + " "; // ubah teks sebelum ikon
+  popup.style.display = "none";
+});
+
+// tombol cancel
+cancelBtn.addEventListener("click", () => {
   popup.style.display = "none";
 });
 
@@ -31,4 +37,5 @@ saveBtn.addEventListener("click", () => {
 window.addEventListener("click", (e) => {
   if (e.target === popup) popup.style.display = "none";
 });
+
 
