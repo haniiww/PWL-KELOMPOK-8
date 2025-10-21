@@ -254,8 +254,8 @@ body {
   align-items: center;
   z-index: 9999;
 }
-    
-/* Box popup */
+
+
 .popup-content {
   background: #111;
   color: white;
@@ -285,10 +285,11 @@ body {
 .popup-content button {
   flex: 1;
   padding: 10px 25px;
-  background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+  background: #34a79f;
   border: none;
   border-radius: 6px;
-  color: white;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -298,7 +299,7 @@ body {
 }
 
 #cancelPopup {
-  background: #444;
+  background: #828282;
 }
 #cancelPopup:hover {
   background: #666;
