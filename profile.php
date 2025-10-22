@@ -35,7 +35,28 @@
 
     <div class="profile-info">
     <h2 id="profileName">
-        POPCORN121 
+        <?php
+        // Assuming user ID is passed via URL, e.g., profile.php?id=1
+        if (isset($_GET['id'])) {
+            $userId = intval($_GET['id']);
+            require_once 'User_input/db_Connection.php';
+            $query = "SELECT name FROM users WHERE id = ?";
+            $stmt = $connection->prepare($query);
+            $stmt->bind_param('i', $userId);
+            $stmt->execute();
+            $result = $stmt->get_result();
+            if ($result->num_rows > 0) {
+                $user = $result->fetch_assoc();
+                echo htmlspecialchars($user['name']);
+            } else {
+                echo "User not found";
+            }
+            $stmt->close();
+            $connection->close();
+        } else {
+            echo "POPCORN121"; // Default name if no ID
+        }
+        ?>
         <i class="fa-solid fa-pen edit-btn" id="editNameBtn"></i>
     </h2>
     <p>6288242857370</p>
