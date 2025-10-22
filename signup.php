@@ -1,3 +1,16 @@
+<?php
+    $host="localhost";
+    $username="root";
+    $password="";
+    $database="user_data";
+
+    $connection = mysqli_connect($host, $username, $password, $database);
+
+    if(!$connection){
+        die("Database Connection Failed: " . mysqli_connect_error());
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,11 +42,11 @@
     <div class="form-box">
       <h2>Create an account</h2>
       <p>Already have an account? <a href="login.php">Log in</a></p>
-      <form>
-          <input type="text" placeholder="First Name" required>
-          <input type="email" placeholder="Email" required>
+      <form class="form" method="POST" action="User_input/User.php">
+          <input type="text" id="name" name="name" placeholder="First Name" required>
+          <input type="email" id="email" name="email" placeholder="Email" required>
             <div class="password-wrapper">
-              <input type="text" id="password" placeholder="Password" required>
+              <input type="password" id="password" name="password" placeholder="Password" required>
               <i class="fa-solid fa-eye toggle-password" id="togglePassword"></i>
             </div>
           <button type="submit">Create Account</button>

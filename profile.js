@@ -24,8 +24,32 @@ saveBtn.addEventListener("click", () => {
     return;
   }
 
-  nameDisplay.childNodes[0].textContent = newName + " "; // ubah teks sebelum ikon
-  popup.style.display = "none";
+  // Get user ID from URL or assume it's available (e.g., from session)
+  const urlParams = new URLSearchParams(window.location.search);
+  const userId = urlParams.get('id') || 1; // Default to 1 if not present, adjust as needed
+
+  // Send AJAX request to update username in database
+  fetch('User_input/update_username.php', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    body: `user_id=${userId}&new_name=${encodeURIComponent(newName)}`
+  })
+  .then(response => response.json())
+  .then(data => {
+    if (data.success) {
+      nameDisplay.childNodes[0].textContent = newName + " "; // ubah teks sebelum ikon
+      popup.style.display = "none";
+      alert("Name updated successfully!");
+    } else {
+      alert("Error: " + data.message);
+    }
+  })
+  .catch(error => {
+    console.error('Error:', error);
+    alert("An error occurred while updating the name.");
+  });
 });
 
 // tombol cancel
