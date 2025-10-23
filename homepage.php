@@ -26,7 +26,7 @@
                 <div class="overlay-text">
                     <h3>Demon Slayer</h3>
                     <p>The demon slayer corps is lured into 'Infinity Castle' by Muzan. At the demon headquarters, Tanjiro, Nezuko, and the Hashira will face the terrifying upper moon demons.</p>
-                    <button class="btn1">Get Ticket</button>
+                    <a href="reservation.php" style="text-decoration: none;"><button class="btn1">Get Ticket</button></a>
                     <button class="btn2">More Info</button>
                 </div>
             </div>
