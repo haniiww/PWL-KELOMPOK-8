@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins';
+  background-color: #0D0D0D;
+  color: #fff;
+}
+
+.movie-hero {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1), #0D0D0D 100%),
+              url('fotohomepage/Bg.png') no-repeat center center/cover;
+  width: 100%;
+  max-height: 1000vh;
+  position: relative;
+}
+
+.movie-container {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+  padding: 120px 40px 80px;
+  position: relative;
+  z-index: 2;
+}
+
+.poster-section {
+  flex: 0 0 280px;
+}
+
+.poster-img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.movie-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* ubah dari center ke flex-start */
+}
+
+.movie-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.movie-desc {
+  color: #d2d2d2;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.buy-btn {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 12px 40px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  max-width: 200px;        
+  margin-top: 30px;
+  text-align: center;
+}
+
+.buy-btn:hover {
+  background-color: #009688;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.schedule-section {
+  background-color: #0D0D0D;
+  padding: 30px 0 70px;
+}
+
+.schedule-container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.day-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1a1a1a;
+  padding: 18px 25px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.day-item {
+  color: #ccc;
+  text-align: center;
+  flex: 1;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 14px 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+.day-item.active {
+  background-color: #009688;
+  color: #fff;
+  font-weight: 700;
+}
+
+.day-item:hover:not(.active) {
+  color: #fff;
+}
+
+.movie-info {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 10px 0 25px;
+  text-align: left;
+}
+
+.time-buttons {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  max-width: 1150px;
+  margin: 0 auto;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.showtimes {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.time-btn {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.time-btn:hover {
+  background: #555;
+}
+
+.time-btn.active {
+  background-color: #009688;
+  color: #fff;
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+}
+
+.continue-btn {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: 'Poppins';
+  transition: 0.3s;
+}
+
+.continue-btn:hover {
+  background-color: #009688;
+}

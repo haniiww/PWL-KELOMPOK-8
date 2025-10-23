@@ -9,7 +9,7 @@
 
 body {
     color: white;
-    font-family: "poppins";
+    font-family: 'Poppins';
 }
 
 .header {
