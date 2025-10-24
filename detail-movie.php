@@ -47,7 +47,7 @@
       <button class="time-btn">13.30</button>
       <button class="time-btn">16.30</button>
     </div>
-    <button class="continue-btn">CONTINUEgit</button>
+    <a class="continue-btn" id="continueLink" href="reservation.php">CONTINUE</a>
   </div>
 </section>
 
