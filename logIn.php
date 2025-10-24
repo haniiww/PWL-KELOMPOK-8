@@ -30,10 +30,10 @@
     <div class="form-box">
       <h2>Log In</h2>
       <p>New to this App? <a href="signup.php">Sign Up Now</a></p>
-      <form>
-          <input type="email" placeholder="Email" required>
+      <form method="POST" action="User_input/login.php">
+          <input type="email" name="email" placeholder="Email" required>
           <div class="password-wrapper">
-            <input type="text" id="password" placeholder="Password" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
             <i class="fa-solid fa-eye toggle-password" id="togglePassword"></i>
           </div>
           <button type="submit">Enter</button>
