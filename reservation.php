@@ -9,76 +9,226 @@
     <link rel="stylesheet" href="reservation.css">
 </head>
 <body>
-    <div class="background-top"></div>
-    <div class="background-bottom"></div>
-    <?php include './header.php' ?>
-    <div class="container">
-        <div class="movie-info">
-            <div class="movie-poster">
-                <img src="fotohomepage/25DSIC.jpg" alt="">
-            </div>
-            <div class="movie-details">
-                <h1>DEMON SLAYER -KIMETSU NO YAIBA- THE MOVIE: INFINITY CASTLE</h1>
-            </div>
+<div class="movie-hero">
+  <?php include './header.php' ?>
+
+    <div class="movie-container">
+        <div class="poster-section">
+            <img src="fotohomepage/25DSIC.jpg" alt="Demon Slayer Poster" class="poster-img">
         </div>
-
-        <div class="seat-layout">
-            <div class="screen">SCREEN</div>
-            <div class="seats">
-                <?php
-                $rows = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
-                foreach ($rows as $row) {
-                    for ($i = 1; $i <= 10; $i++) {
-                        echo "<div class='seat available' data-seat='$row$i'>$row$i</div>";
-                    }
-                }
-                ?>
+        <div class="movie-details">
+            <h1 class="movie-title">DEMON SLAYER – KIMETSU NO YAIBA:<br>THE MOVIE: INFINITY CASTLE</h1>
+            <div class="screen">Screen</div>
+            <div class="chair">
+                <div class="row">
+                    <span>J</span>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <span>J</span>
+                </div>
+                <div class="row">
+                    <span>J</span>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <span>J</span>
+                </div>
+                <div class="row">
+                    <span>J</span>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <span>J</span>
+                </div>
+                <div class="row">
+                    <span>J</span>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <span>J</span>
+                </div>
+                <div class="row">
+                    <span>J</span>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <span>J</span>
+                </div>
+                <div class="row">
+                    <span>J</span>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <span>J</span>
+                </div>
+                <div class="row">
+                    <span>J</span>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <span>J</span>
+                </div>                
             </div>
-
-            <div class="legend">
-                <div class="legend-item">
-                    <div class="seat available"></div>
-                    <span>Available</span>
+            <div class="details" id="det">
+                <div class="details_chair">
+                    <li>Avalable</li>
+                    <li>Booked</li>
+                    <li>Selected</li>
                 </div>
-                <div class="legend-item">
-                    <div class="seat selected"></div>
-                    <span>Selected</span>
-                </div>
-                <div class="legend-item">
-                    <div class="seat taken"></div>
-                    <span>Taken</span>
-                </div>
-            </div>
+            </div>            
         </div>
-
-        <div class="progress-bar">
-            <div class="progress-step">Reservation</div>
-            <div class="progress-step">Payment</div>
-            <div class="progress-step">Proof</div>
-        </div>
-
-        <form id="reservationForm" action="payment.php" method="POST">
-            <input type="hidden" name="selected_seats" id="selected_seats">
-            <button type="submit" style="padding: 10px 20px; background: #000; color: white; border: none; cursor: pointer;">
-                Continue to Payment
-            </button>
-        </form>
     </div>
+</div>
 
-    <script>
-        document.querySelectorAll('.seat.available').forEach(seat => {
-            seat.addEventListener('click', function() {
-                this.classList.toggle('selected');
-                updateSelectedSeats();
-            });
-        });
 
-        function updateSelectedSeats() {
-            const selectedSeats = Array.from(document.querySelectorAll('.seat.selected'))
-                .map(seat => seat.dataset.seat);
-            document.getElementById('selected_seats').value = JSON.stringify(selectedSeats);
-        }
-    </script>
 
     <?php include './footer.php' ?>
 </body>
