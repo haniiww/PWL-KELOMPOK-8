@@ -175,6 +175,7 @@ body {
   font-weight: 600;
   font-family: 'Poppins';
   transition: 0.3s;
+  text-decoration: none;
 }
 
 .continue-btn:hover {

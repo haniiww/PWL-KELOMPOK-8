@@ -36,3 +36,30 @@ document.getElementById("buyTicketBtn").addEventListener("click", function() {
     behavior: "smooth"
   });
 });
+(function(){
+  const continueLink = document.getElementById('continueLink');
+  if (!continueLink) return;
+
+  continueLink.addEventListener('click', function(e){
+    e.preventDefault();
+
+    // selected day
+    const activeDay = document.querySelector('.day-item.active');
+    const dayText = activeDay ? activeDay.textContent.replace(/\s+/g,' ').trim() : '';
+
+    // selected time (prefer .active, fallback to first button)
+    const activeTimeBtn = document.querySelector('.time-btn.active') || document.querySelector('.time-btn');
+    let selectedTime = '';
+    if (activeTimeBtn) {
+      selectedTime = activeTimeBtn.dataset.time || activeTimeBtn.textContent.trim();
+      // normalize "10.30" -> "10:30"
+      selectedTime = selectedTime.replace(/\./g, ':');
+    }
+
+    const params = new URLSearchParams();
+    if (dayText) params.set('day', dayText);
+    if (selectedTime) params.set('time', selectedTime);
+
+    window.location.href = 'reservation.php?' + params.toString();
+  });
+})();
