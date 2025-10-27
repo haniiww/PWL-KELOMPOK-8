@@ -47,7 +47,7 @@
       <button class="time-btn">13.30</button>
       <button class="time-btn">16.30</button>
     </div>
-    <button class="continue-btn">CONTINUEgit</button>
+    <button class="continue-btn">CONTINUE</button>
   </div>
 </section>
 
