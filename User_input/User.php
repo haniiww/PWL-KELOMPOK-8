@@ -14,7 +14,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($stmt->affected_rows > 0) {
         $userId = $connection->insert_id;
-        header("Location: ../profile.php?id=" . $userId);
+        session_start();
+        $_SESSION['user_id'] = $userId;
+        header("Location: ../homepage.php");
         exit();
     } else {
         echo "Error storing user: " . $stmt->error;

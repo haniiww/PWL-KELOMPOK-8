@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $user = $result->fetch_assoc();
         if (password_verify($password, $user['password'])) {
             $_SESSION['user_id'] = $user['id'];
-            header("Location: ../profile.php?id=" . $user['id']);
+            header("Location: ../homepage.php");
             exit();
         } else {
             header("Location: ../logIn.php?error=1");
