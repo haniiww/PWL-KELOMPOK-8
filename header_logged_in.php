@@ -84,47 +84,7 @@ body {
     transform: translateY(-2px);
 }
 
-.menu-kanan {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
 
-.menu a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 8px 12px;
-    border-radius: 6px;
-    transition: all 0.3s ease;
-}
-
-.menu a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    transform: translateY(-2px);
-}
-
-.tombol-auth {
-    display: flex;
-    gap: 15px;
-    margin-right: 10px;
-}
-
-.btn {
-    padding: 8px 18px;
-    border-radius: 100px;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 600;
-    border: 2px solid white;
-    background-color: transparent;
-    color: white;
-    transition: all 0.3s ease;
-}
-
-.btn:hover {
-    background-color: rgba(255, 255, 255, 0.15);
-}
 
 .right-side {
     display: flex;
@@ -145,21 +105,14 @@ body {
     height: 30px;
 }
 
-.logout-btn {
-    background-color: transparent;
-    border: 2px solid white;
+.user-name {
     color: white;
-    padding: 8px 18px;
-    border-radius: 100px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    margin-right: 10px;
 }
 
-.logout-btn:hover {
-    background-color: rgba(255, 255, 255, 0.15);
-}
+
 </style>
 
 <header class="header">
@@ -179,6 +132,5 @@ body {
             <div class="user-info">
                 <a href="profile.php"><img src="header&footer/Untitled__10__page-0001-removebg-preview.png" alt="Profile"></a>
             </div>
-        </div>
     </nav>
 </header>

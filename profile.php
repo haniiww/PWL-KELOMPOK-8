@@ -92,6 +92,18 @@ if (!isset($_SESSION['user_id'])) {
     </div>
     </div>
 
+    <div class="logout-container">
+    <div class="menu-item logout-item">
+        <i class="fa-solid fa-sign-out-alt logout-icon"></i>
+        <div class="menu-text">
+        <a href="logout.php" class="logout-link">
+            <h3>Logout</h3>
+            <p>Sign out of your account</p>
+        </a>
+        </div>
+    </div>
+    </div>
+
 
 </section>
 
