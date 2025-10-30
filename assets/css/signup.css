@@ -40,7 +40,7 @@ body {
   max-width: 1000px;
   border-radius: 20px;
   overflow: hidden;
-  background: url("fotologin-signup/background.png") no-repeat center center;
+  background: url("../assets/images/fotologin-signup/background.png") no-repeat center center;
   background-size: cover;
   box-shadow: 0 8px 25px rgba(0,0,0,0.8);
 }

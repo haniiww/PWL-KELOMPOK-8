@@ -13,7 +13,7 @@ body {
 
 .movie-hero {
   background: linear-gradient(to bottom, rgba(0,0,0,0.1), #0D0D0D 100%),
-              url('fotohomepage/Bg.png') no-repeat center center/cover;
+              url('../assets/images/fotohomepage/Bg.png') no-repeat center center/cover;
   width: 100%;
   max-height: 1000vh;
   position: relative;

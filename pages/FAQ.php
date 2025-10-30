@@ -4,17 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>FAQ - JEF Cinema</title>
-    <link rel="stylesheet" href="FAQ.css" />
+    <link rel="stylesheet" href="../assets/css/FAQ.css" />
 </head>
 <body>
-    <?php include './header.php' ?>
+    <?php include('../components/header.php'); ?>
     <div class="container">
         <div class="overlay">
             <main class="faq-section">
                 <h1>Frequently Asked Question</h1>
 
                 <div class="search-box">
-                    <img src="fotohomepage/tombolsearch.png" alt="search" class="search-icon">
+                    <img src="../assets/images/fotohomepage/tombolsearch.png" alt="search" class="search-icon">
                     <input id="faq-search" type="text" placeholder="What is your problem ?" />
                 </div>
 
@@ -81,7 +81,7 @@
                 </div>
             </main>
 
-            <?php include './footer.php' ?>
+            <?php include('../components/footer.php'); ?>
         </div>
     </div>
 

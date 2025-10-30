@@ -14,12 +14,6 @@ body {
   color: #fff;
 }
 
-.container {
-  background: url("fotohomepage/background.png") repeat-x;
-  background-size: cover;
-  animation: movebg 40s linear infinite;
-}
-
 @keyframes movebg {
   from { background-position: 0 0; }
   to { background-position: -2000px 0; }
@@ -39,7 +33,7 @@ body {
     position: relative;
     width: 100%;
     height: 900px;
-    background: url('about_us/bg.png') no-repeat center center;
+    background: url('../images/about_us/bg.png') no-repeat center center;
 }
 
 .hero-content {
