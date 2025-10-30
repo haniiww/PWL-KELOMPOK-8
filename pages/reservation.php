@@ -6,7 +6,7 @@
     <title>Movie Reservation</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="reservation.css">
+    <link rel="stylesheet" href="../assets/css/reservation.css">
 </head>
 <body>
 <div class="movie-hero">
@@ -14,7 +14,7 @@
 
     <div class="movie-container">
         <div class="poster-section">
-            <img src="fotohomepage/25DSIC.jpg" alt="Demon Slayer Poster" class="poster-img">
+            <img src="../assets/images/fotohomepage/25DSIC.jpg" alt="Demon Slayer Poster" class="poster-img">
         </div>
         <div class="movie-details">
             <h1 class="movie-title">DEMON SLAYER – KIMETSU NO YAIBA:<br>THE MOVIE: INFINITY CASTLE</h1>
@@ -228,8 +228,6 @@
     </div>
 </div>
 
-
-
-    <?php include './footer.php' ?>
+<?php include('../components/footer.php'); ?>
 </body>
 </html>

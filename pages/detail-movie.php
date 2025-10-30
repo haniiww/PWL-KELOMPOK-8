@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail Movie</title>
-    <link rel="stylesheet" href="detail-movie.css">
+    <link rel="stylesheet" href="../assets/css/detail-movie.css">
 </head>
 <div class="movie-hero">
-  <?php include './header.php' ?>
+  <?php include('../components/header.php'); ?>
 
   <div class="movie-container">
     <div class="poster-section">
-      <img src="fotohomepage/25DSIC.jpg" alt="Demon Slayer Poster" class="poster-img">
+      <img src="../assets/images/fotohomepage/25DSIC.jpg" alt="Demon Slayer Poster" class="poster-img">
     </div>
 
     <div class="movie-details">
@@ -51,8 +51,8 @@
   </div>
 </section>
 
-<?php include './footer.php' ?>
-<script src="detail-movie.js"></script>
+<?php include('../components/footer.php'); ?>
+<script src="../assets/js/detail-movie.js"></script>
 
 </body>
 </html>

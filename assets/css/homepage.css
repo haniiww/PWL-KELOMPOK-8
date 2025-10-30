@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 body {
   margin: 0;
@@ -16,7 +15,7 @@ body {
 }
 
 .container {
-  background: url("fotohomepage/background.png") repeat-x;
+  background: url("../images/fotohomepage/background.png") repeat-x;
   background-size: cover;
   animation: movebg 40s linear infinite;
 }
@@ -43,12 +42,6 @@ main h1 {
   font-size: 40px;
   font-weight: bolder;
   padding: 400px 0 400px 0;
-}
-
-.container {
-  background: url("fotohomepage/background.png") repeat-x;
-  background-size: cover;
-  animation: movebg 40s linear infinite;
 }
 
 .collection{

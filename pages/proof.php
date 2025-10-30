@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Proof — Reservation</title>
-    <link rel="stylesheet" href="Payment-Method.css">
+    <link rel="stylesheet" href="../assets/css/Payment-Method.css">
 </head>
 <?php
 include './header.php';
@@ -35,7 +35,7 @@ $qrUrl = 'https://chart.googleapis.com/chart?chs=' . $size . 'x' . $size . '&cht
         <div class="pm-mid">
             <!-- Left: Poster -->
             <div class="pm-poster">
-                <img src="fotohomepage/25DSIC.jpg" alt="movie poster" />
+                <img src="../assets/images/fotohomepage/25DSIC.jpg" alt="movie poster" />
             </div>
 
             <!-- Middle: Ticket Info -->
@@ -70,7 +70,7 @@ $qrUrl = 'https://chart.googleapis.com/chart?chs=' . $size . 'x' . $size . '&cht
             <div class="progress-step active">Proof</div>
         </div>
 
-    <script src="Payment-Method.js"></script>
-    <?php include './footer.php' ?>
+<?php include('../components/footer.php'); ?>
+<script src="../assets/js/Payment-Method.js"></script>
 </body>
 </html>
