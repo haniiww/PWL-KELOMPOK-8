@@ -1,3 +1,8 @@
+<?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +15,7 @@
 <body>
 <div class="container">
   <div class="overlay">
-    <?php include('../components/header.php'); ?>
+    <?php include('../User_input/header.php'); ?>
     <main>
       <h1>FEEL THE MOMENTS BEYOND</h1>
     </main>
@@ -25,7 +30,7 @@
                 <div class="overlay-text">
                     <h3>Demon Slayer</h3>
                     <p>The demon slayer corps is lured into 'Infinity Castle' by Muzan. At the demon headquarters, Tanjiro, Nezuko, and the Hashira will face the terrifying upper moon demons.</p>
-                    <a href="reservation.php" style="text-decoration: none;"><button class="btn1">Get Ticket</button></a>
+                    <a href="detail-movie.php" style="text-decoration: none;"><button class="btn1">Get Ticket</button></a>
                     <button class="btn2">More Info</button>
                 </div>
             </div>
@@ -82,7 +87,7 @@
       <div class="carousel" id="nowPlaying">
         <img src="../assets/images/fotohomepage/25SEDE.jpg" alt="">
         <img src="../assets/images/fotohomepage/Placeholder image (1).png" alt="">
-        <a href="../pages/detail-movie.php"><img src="../assets/images/fotohomepage/25DSIC.jpg" alt=""></></a>
+        <a href="detail-movie.php"><img src="../assets/images/fotohomepage/25DSIC.jpg" alt=""></></a>
         <img src="../assets/images/fotohomepage/15LTCD.jpg" alt="">
         <img src="../assets/images/fotohomepage/25SEDE.jpg" alt="">
         <img src="../assets/images/fotohomepage/Placeholder image (1).png" alt="">

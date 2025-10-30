@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $userId = $connection->insert_id;
         session_start();
         $_SESSION['user_id'] = $userId;
-        header("Location: ../homepage.php");
+        header("Location: ../pages/homepage.php");
         exit();
     } else {
         echo "Error storing user: " . $stmt->error;

@@ -40,8 +40,8 @@
   <div class="right-side">
     <div class="form-box">
       <h2>Create an account</h2>
-      <p>Already have an account? <a href="login.php">Log in</a></p>
-      <form class="form" method="POST" action="User_input/User.php">
+      <p>Already have an account? <a href="logIn.php">Log in</a></p>
+      <form class="form" method="POST" action="../User_input/User.php">
           <input type="text" id="name" name="name" placeholder="First Name" required>
           <input type="email" id="email" name="email" placeholder="Email" required>
             <div class="password-wrapper">

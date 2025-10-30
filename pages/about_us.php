@@ -1,3 +1,8 @@
+<?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +13,7 @@
 </head>
 <body>
 <div class="hero-section">
-    <?php include('../components/header.php'); ?>
+    <?php include('../user_input/header.php'); ?>
     <div class="hero-content">
         <h1>AT THE HEART OF JEF CINEMA</h1>
         <p>

@@ -1,3 +1,12 @@
+<?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+if (!isset($_SESSION['user_id'])) {
+    header("Location: logIn.php");
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,23 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
-<header class="header">
-    <nav class="nav-container">
-        <a href="index.php" class="logo">
-        <img src="../assets/images/header&footer/JEF (2).png" alt="Logo"> Cinema
-        </a>
-
-        <ul class="nav-menu" id="navMenu">
-        <li><a href="homepage.php" class="nav-link">Home</a></li>
-        <li><a href="about_us.php" class="nav-link">About Us</a></li>
-        <li><a href="#" class="nav-link">FAQ</a></li>
-        </ul>
-
-        <div style="display: flex; align-items: center; gap: 20px;">
-        <i class="fa-regular fa-user"></i>
-        </div>
-    </nav>
-</header>
+<?php include('../User_input/header.php'); ?>
 
 <section class="profile-container">
     <div class="profile-header">
@@ -36,26 +29,20 @@
     <div class="profile-info">
     <h2 id="profileName">
         <?php
-        // Assuming user ID is passed via URL, e.g., profile.php?id=1
-        if (isset($_GET['id'])) {
-            $userId = intval($_GET['id']);
-            require_once 'User_input/db_Connection.php';
-            $query = "SELECT name FROM users WHERE id = ?";
-            $stmt = $connection->prepare($query);
-            $stmt->bind_param('i', $userId);
-            $stmt->execute();
-            $result = $stmt->get_result();
-            if ($result->num_rows > 0) {
-                $user = $result->fetch_assoc();
-                echo htmlspecialchars($user['name']);
-            } else {
-                echo "User not found";
-            }
-            $stmt->close();
-            $connection->close();
+        $userId = $_SESSION['user_id'];
+        require_once '../User_input/db_Connection.php';
+        $query = "SELECT name FROM users WHERE id = ?";
+        $stmt = $connection->prepare($query);
+        $stmt->bind_param('i', $userId);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        if ($result && $result->num_rows > 0) {
+            $user = $result->fetch_assoc();
+            echo htmlspecialchars($user['name']);
         } else {
-            echo "POPCORN121"; 
+            echo "User not found or database error";
         }
+        if (isset($stmt)) $stmt->close();
         ?>
         <i class="fa-solid fa-pen edit-btn" id="editNameBtn"></i>
     </h2>
@@ -111,11 +98,15 @@
         <div class="arr-item"><i class="fa-solid fa-link"></i> Account Security</div>
         <div class="arr-item"><i class="fa-solid fa-globe"></i> Language</div>
         <div class="arr-item"><i class="fa-solid fa-phone"></i> Support & Feedback</div>
+        <div class="arr-item logout-item"><i class="fa-solid fa-sign-out-alt"></i> <a href="../User_input/logout.php" style="color: inherit; text-decoration: none;">Logout</a></div>
     </div>
 </section>
 
 <?php include('../components/footer.php'); ?>
 
+<script>
+    const userId = <?php echo $_SESSION['user_id']; ?>;
+</script>
 <script src="../assets/js/profile.js"></script>
 </body>
 </html>

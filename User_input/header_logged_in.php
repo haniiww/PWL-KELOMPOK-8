@@ -4,7 +4,7 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 $userName = '';
 if (isset($_SESSION['user_id'])) {
-    require_once 'User_input/db_Connection.php';
+    require_once '../User_input/db_Connection.php';
     $query = "SELECT name FROM users WHERE id = ?";
     $stmt = $connection->prepare($query);
     $stmt->bind_param('i', $_SESSION['user_id']);
@@ -117,20 +117,20 @@ body {
 
 <header class="header">
     <nav class="nav-container">
-        <a href="homepage.php" class="logo">
-            <img src="header&footer/JEF (2).png" alt="Logo">
+        <a href="../pages/homepage.php" class="logo">
+            <img src="../assets/images/header&footer/JEF (2).png" alt="Logo">
             Cinema
         </a>
 
         <div class="right-side">
             <ul class="nav-menu" id="navMenu">
-                <li><a href="homepage.php" class="nav-link">Home</a></li>
-                <li><a href="about_us.php" class="nav-link">About Us</a></li>
-                <li><a href="#" class="nav-link">FAQ</a></li>
+                <li><a href="../pages/homepage.php" class="nav-link">Home</a></li>
+                <li><a href="../pages/about_us.php" class="nav-link">About Us</a></li>
+                <li><a href="../pages/FAQ.php" class="nav-link">FAQ</a></li>
             </ul>
 
             <div class="user-info">
-                <a href="profile.php"><img src="header&footer/Untitled__10__page-0001-removebg-preview.png" alt="Profile"></a>
+                <a href="../pages/profile.php"><img src="../assets/images/header&footer/Untitled__10__page-0001-removebg-preview.png" alt="Profile"></a>
             </div>
     </nav>
 </header>

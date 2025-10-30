@@ -30,7 +30,7 @@
     <div class="form-box">
       <h2>Log In</h2>
       <p>New to this App? <a href="signup.php">Sign Up Now</a></p>
-      <form method="POST" action="User_input/login.php">
+      <form method="POST" action="../User_input/login.php">
           <input type="email" name="email" placeholder="Email" required>
           <div class="password-wrapper">
             <input type="password" id="password" name="password" placeholder="Password" required>

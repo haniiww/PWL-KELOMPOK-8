@@ -92,51 +92,17 @@ h2{
     width: 80px;
 }
 
-.payment-method {
+.qr-section {
     width: 40%;
-}
-
-.payment-method h3 {
-    margin: 15px 0 10px;
-    font-size: 18px;
-}
-
-.payment-option {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 15px;
-    cursor: pointer;
-    font-size: 15px;
+    justify-content: center;
 }
 
-.payment-option input {
-    display: none;
-}
-
-.check-circle {
-    width: 16px;
-    height: 16px;
-    border: 2px solid white;
-    border-radius: 50%;
-    display: inline-block;
-    position: relative;
-}
-
-.payment-option input:checked + .check-circle {
-    border-color: #00b894;
-}
-
-.payment-option input:checked + .check-circle::after {
-    content: "";
-    width: 10px;
-    height: 10px;
-    background: #00b894;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.qr-img {
+    width: 220px;
+    height: 220px;
+    filter: brightness(1.2);
 }
 
 .steps {
