@@ -1,66 +1,61 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Payment — Reservation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Reservation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/Payment-Method.css">
-</head>
-<?php
-include '../components/header.php';
-include 'User_input/db_Connection.php';
+</head><body>
+<div class="movie-hero">
+  <?php include '../User_input/header.php' ?>
 
-$seat = 'F12';
-$price = 'Rp 70.000,00';
-?>
-<body>
-<main class="pm-root">
-    <div class="movie-info">
-
+    <div class="movie-container">
+        <div class="poster-section">
+            <img src="../assets/images/fotohomepage/25DSIC.jpg" alt="Demon Slayer Poster" class="poster-img">
+        </div>
         <div class="movie-details">
-            <h1>DEMON SLAYER -KIMETSU NO YAIBA- THE MOVIE: INFINITY CASTLE</h1>
-        </div>
-    </div>
+            <h1 class="movie-title">DEMON SLAYER – KIMETSU NO YAIBA:<br>THE MOVIE: INFINITY CASTLE</h1>
+            <div class="payment-container">
+                <div class="ticket-info">
+                    <h2>AYANI</h2>
+                    <hr>
 
-    <div class="pm-mid">
-        <div class="pm-poster">
-            <img src="../assets/images/fotohomepage/25DSIC.jpg" alt="movie poster" />
-        </div>
+                    <div class="info-row"><span>DATE</span><span>Sunday, 20 August 2025</span></div>
+                    <div class="info-row"><span>TIME</span><span>10:30</span></div>
+                    <div class="info-row">
+                        <span>ROW</span><span>F</span>
+                        <span>SEAT</span><span>12</span>
+                    </div>
+                    <div class="info-row"><span>PRICE</span><span>Rp 70.000,00</span></div>
+                </div>
 
-        <div class="pm-ticket">
-            <div class="ticket-header">
-                <h2>AYANI</h2>
+                <div class="payment-method">
+                    <h3>Virtual Account</h3>
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="mandiri">
+                        <span class="check-circle"></span> Mandiri Virtual Account
+                    </label>
+
+                    <h3>Cards</h3>
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="card">
+                        <span class="check-circle"></span> Credit Card / Debit Card
+                    </label>
+                </div>
             </div>
-            <hr class="ticket-separator" />
-            <div class="ticket-details">
-                <p><strong>Date:</strong> [Placeholder for Date]</p>
-                <p><strong>Time:</strong> [Placeholder for Time]</p>
-                <p><strong>Row:</strong> <?php echo htmlspecialchars($seat); ?></p>
-                <p><strong>Price:</strong> <?php echo htmlspecialchars($price); ?></p>
-            </div>
-        </div>
-    
-        <div class="pm-payment">
-            <h3>Payment Method</h3>
-            <div class="payment-option">
-                <button class="payment-btn active" data-method="virtual"></button>
-                <span class="payment-detail">Mandiri Virtual Account</span>
-            </div>
-            <div class="payment-option">
-                <button class="payment-btn" data-method="card"></button>
-                <span class="payment-detail">Credit Card / Debit Card</span>
-            <button type="button" class="btn primary" id="proceedBtn">Proceed Payment</button>
-        </div>
+        </div>       
     </div>
-</main>
+</div>
+<div class="steps">
+    <button class="step" data-step="1" onclick="window.location.href='reservation.php'">Reservation</button>
+    <div class="line"></div>
 
-    <div class="progress-bar">
-        <div class="progress-step">Reservation</div>
-        <div class="progress-step active">Payment</div>
-        <div class="progress-step">Proof</div>
-    </div>
+    <button class="step active" data-step="2" onclick="window.location.href='Payment-Method.php'">Payment</button>
+    <div class="line"></div>
 
-<script src="../assets/js/Payment-Method.js"></script>
-<?php include('../components/footer.php'); ?>
+    <button class="step" data-step="3" onclick="window.location.href='proof.php'">Proof</button></div>  
+    <?php include '../components/footer.php' ?>
 </body>
 </html>

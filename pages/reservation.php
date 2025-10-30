@@ -10,7 +10,8 @@
 </head>
 <body>
 <div class="movie-hero">
-  <?php include './header.php' ?>
+  <?php include('../User_input/header.php'); ?>
+
 
     <div class="movie-container">
         <div class="poster-section">
@@ -18,7 +19,7 @@
         </div>
         <div class="movie-details">
             <h1 class="movie-title">DEMON SLAYER – KIMETSU NO YAIBA:<br>THE MOVIE: INFINITY CASTLE</h1>
-            <div class="screen">Screen</div>
+            <div class="screen">SCREEN</div>
             <div class="chair">
                 <div class="row">
                     <span>J</span>
@@ -49,7 +50,7 @@
                    <span>J</span>
                 </div>
                 <div class="row">
-                    <span>J</span>
+                    <span>I</span>
                    <li class="seat"></li>
                    <li class="seat"></li>
                    <li class="seat"></li>
@@ -74,10 +75,10 @@
                    <li class="seat"></li>
                    <li class="seat"></li>
                    <li class="seat"></li>
-                   <span>J</span>
+                   <span>I</span>
                 </div>
                 <div class="row">
-                    <span>J</span>
+                    <span>H</span>
                    <li class="seat"></li>
                    <li class="seat"></li>
                    <li class="seat"></li>
@@ -102,10 +103,10 @@
                    <li class="seat"></li>
                    <li class="seat"></li>
                    <li class="seat"></li>
-                   <span>J</span>
+                   <span>H</span>
                 </div>
                 <div class="row">
-                    <span>J</span>
+                    <span>G</span>
                    <li class="seat"></li>
                    <li class="seat"></li>
                    <li class="seat"></li>
@@ -130,10 +131,10 @@
                    <li class="seat"></li>
                    <li class="seat"></li>
                    <li class="seat"></li>
-                   <span>J</span>
+                   <span>G</span>
                 </div>
                 <div class="row">
-                    <span>J</span>
+                    <span>F</span>
                    <li class="seat"></li>
                    <li class="seat"></li>
                    <li class="seat"></li>
@@ -158,10 +159,10 @@
                    <li class="seat"></li>
                    <li class="seat"></li>
                    <li class="seat"></li>
-                   <span>J</span>
+                   <span>F</span>
                 </div>
                 <div class="row">
-                    <span>J</span>
+                    <span>E</span>
                    <li class="seat"></li>
                    <li class="seat"></li>
                    <li class="seat"></li>
@@ -186,10 +187,10 @@
                    <li class="seat"></li>
                    <li class="seat"></li>
                    <li class="seat"></li>
-                   <span>J</span>
+                   <span>E</span>
                 </div>
                 <div class="row">
-                    <span>J</span>
+                    <span>D</span>
                    <li class="seat"></li>
                    <li class="seat"></li>
                    <li class="seat"></li>
@@ -214,20 +215,112 @@
                    <li class="seat"></li>
                    <li class="seat"></li>
                    <li class="seat"></li>
-                   <span>J</span>
+                   <span>D</span>
+                </div>
+                <div class="row">
+                    <span>C</span>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <span>C</span>
+                </div>
+                <div class="row">
+                    <span>B</span>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <span>B</span>
+                </div>
+                <div class="row">
+                    <span>A</span>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <li class="seat"></li>
+                   <span>A</span>
                 </div>                
             </div>
             <div class="details" id="det">
-                <div class="details_chair">
-                    <li>Avalable</li>
-                    <li>Booked</li>
+               <div class="details_chair">
                     <li>Selected</li>
+                    <li>Available</li>
+                    <li>Taken</li>
                 </div>
-            </div>            
-        </div>
+            </div>    
+        </div>       
     </div>
 </div>
+<div class="steps">
+    <button class="step active" data-step="1" onclick="window.location.href='reservation.php'">Reservation</button>
+    <div class="line"></div>
 
+    <button class="step" data-step="2" onclick="window.location.href='Payment-Method.php'">Payment</button>
+    <div class="line"></div>
+
+    <button class="step" data-step="3" onclick="window.location.href='proof.php'">Proof</button>
+</div>  
 <?php include('../components/footer.php'); ?>
 </body>
 </html>

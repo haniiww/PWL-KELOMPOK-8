@@ -88,15 +88,15 @@ body {
 
 <header class="header">
     <div class="isi">
-        <a href="homepage.php" class="logo">
+        <a href="../pages/homepage.php" class="logo">
             <img src="../assets/images/header&footer/JEF (2).png" alt="Logo">
             Cinema
         </a>
 
         <div class="menu-kanan">
             <div class="tombol-auth">
-                <a href="logIn.php" class="btn btn-login">Login</a>
-                <a href="signup.php" class="btn btn-signup">Sign Up</a>
+                <a href="../pages/logIn.php" class="btn btn-login">Login</a>
+                <a href="../pages/signup.php" class="btn btn-signup">Sign Up</a>
             </div>
         </div>
     </div>

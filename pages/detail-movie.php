@@ -1,3 +1,8 @@
+<?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+?>
 <!DOCTYPE html>
 <div lang="en">
 <head>
@@ -7,7 +12,7 @@
     <link rel="stylesheet" href="../assets/css/detail-movie.css">
 </head>
 <div class="movie-hero">
-  <?php include('../components/header.php'); ?>
+  <?php include('../User_input/header.php'); ?>
 
   <div class="movie-container">
     <div class="poster-section">

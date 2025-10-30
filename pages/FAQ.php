@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../assets/css/FAQ.css" />
 </head>
 <body>
-    <?php include('../components/header.php'); ?>
+<?php include('../user_input/header.php'); ?>
     <div class="container">
         <div class="overlay">
             <main class="faq-section">
