@@ -2,28 +2,41 @@
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
+include('../User_input/db_Connection.php');
+
+// Get movie ID from URL
+$movie_id = isset($_GET['id']) ? intval($_GET['id']) : 0;
+
+// Fetch movie details from database
+$query = "SELECT * FROM movie_poster WHERE id = $movie_id";
+$result = mysqli_query($connection, $query);
+$movie = mysqli_fetch_assoc($result);
+
+if (!$movie) {
+    die("Movie not found.");
+}
 ?>
 <!DOCTYPE html>
-<div lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail Movie</title>
     <link rel="stylesheet" href="../assets/css/detail-movie.css">
 </head>
+<body>
 <div class="movie-hero">
   <?php include('../User_input/header.php'); ?>
 
   <div class="movie-container">
     <div class="poster-section">
-      <img src="../assets/images/fotohomepage/25DSIC.jpg" alt="Demon Slayer Poster" class="poster-img">
+      <img src="<?php echo $movie['image_url']; ?>" alt="<?php echo $movie['title']; ?> Poster" class="poster-img">
     </div>
 
     <div class="movie-details">
-      <h1 class="movie-title">DEMON SLAYER – KIMETSU NO YAIBA:<br>THE MOVIE: INFINITY CASTLE</h1>
+      <h1 class="movie-title"><?php echo $movie['title']; ?></h1>
       <p class="movie-desc">
-        The demon slayer corps is lured into Infinity Castle by Muzan. At the demon headquarters,
-        Tanjiro, Nezuko, and the Hashira will face the terrifying upper moon demons.
+        <?php echo $movie['description']; ?>
       </p>
       <button class="buy-btn" id="buyTicketBtn">BUY TICKET</button>
     </div>

@@ -24,12 +24,8 @@ saveBtn.addEventListener("click", () => {
     return;
   }
 
-  // Get user ID from URL or assume it's available (e.g., from session)
-  const urlParams = new URLSearchParams(window.location.search);
-  const userId = urlParams.get('id') || 1; // Default to 1 if not present, adjust as needed
-
   // Send AJAX request to update username in database
-  fetch('User_input/update_username.php', {
+  fetch('../User_input/update_username.php', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded',
