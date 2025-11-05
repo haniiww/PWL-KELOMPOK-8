@@ -1,4 +1,4 @@
-    <!-- components/footer.php -->
+<!-- components/footer.php -->
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
     
@@ -120,7 +120,7 @@
             <ul>
                 <li><a href="privacy.php">Privacy Policy</a></li>
                 <li><a href="terms.php">Terms of Service</a></li>
-                <li><a href="cookies.php">Cookies Policy</a></li>
+                <li><a href="cookies-policy.php">Cookies Policy</a></li>
             </ul>
         </div>
 
@@ -140,6 +140,4 @@
         © 2025 JEF Cinema. Hak cipta dilindungi.  
     </div>
 </footer>
-
-
 

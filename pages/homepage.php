@@ -2,6 +2,21 @@
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
+include('../User_input/db_Connection.php');
+
+// Fetch up to 16 movies randomly for Now Playing
+$now_playing_query = "SELECT id, title, image_url FROM movie_poster ORDER BY RAND() LIMIT 16";
+$now_playing_result = mysqli_query($connection, $now_playing_query);
+if (!$now_playing_result) {
+    die("Query failed: " . mysqli_error($connection));
+}
+
+// Fetch up to 16 movies randomly for Coming Soon
+$coming_soon_query = "SELECT id, title, image_url FROM movie_poster ORDER BY RAND() LIMIT 16";
+$coming_soon_result = mysqli_query($connection, $coming_soon_query);
+if (!$coming_soon_result) {
+    die("Query failed: " . mysqli_error($connection));
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -85,14 +100,12 @@ if (session_status() === PHP_SESSION_NONE) {
     <button class="carousel-btn prev" onclick="slideCarousel('nowPlaying', -1)">❮</button>
     <div class="carousel-container">
       <div class="carousel" id="nowPlaying">
-        <img src="../assets/images/fotohomepage/25SEDE.jpg" alt="">
-        <img src="../assets/images/fotohomepage/Placeholder image (1).png" alt="">
-        <a href="detail-movie.php"><img src="../assets/images/fotohomepage/25DSIC.jpg" alt=""></></a>
-        <img src="../assets/images/fotohomepage/15LTCD.jpg" alt="">
-        <img src="../assets/images/fotohomepage/25SEDE.jpg" alt="">
-        <img src="../assets/images/fotohomepage/Placeholder image (1).png" alt="">
-        <img src="../assets/images/fotohomepage/25DSIC.jpg" alt="">
-        <img src="../assets/images/fotohomepage/15LTCD.jpg" alt="">
+        <?php
+        if ($now_playing_result) {
+          while ($movie = mysqli_fetch_assoc($now_playing_result)):
+        ?>
+        <a href="detail-movie.php?id=<?= $movie['id'] ?>"><img src="<?php echo $movie['image_url']; ?>" alt="<?php echo $movie['title']; ?>"></a>
+        <?php endwhile; } ?>
       </div>
     </div>
     <button class="carousel-btn next" onclick="slideCarousel('nowPlaying', 1)">❯</button>
@@ -105,14 +118,12 @@ if (session_status() === PHP_SESSION_NONE) {
     <button class="carousel-btn prev" onclick="slideCarousel('comingSoon', -1)">❮</button>
     <div class="carousel-container">
       <div class="carousel" id="comingSoon">
-        <img src="../assets/images/fotohomepage/25DATL.jpg" alt="">
-        <img src="../assets/images/fotohomepage/imax.png" alt="">
-        <img src="../assets/images/fotohomepage/25PSUI.jpg" alt="">
-        <img src="../assets/images/fotohomepage/25CLRS.jpg" alt="">
-        <img src="../assets/images/fotohomepage/25DATL.jpg" alt="">
-        <img src="../assets/images/fotohomepage/imax.png" alt="">
-        <img src="../assets/images/fotohomepage/25PSUI.jpg" alt="">
-        <img src="../assets/images/fotohomepage/25CLRS.jpg" alt="">
+        <?php
+        if ($coming_soon_result) {
+          while ($movie = mysqli_fetch_assoc($coming_soon_result)):
+        ?>
+        <a href="detail-movie.php?id=<?= $movie['id'] ?>"><img src="<?php echo $movie['image_url']; ?>" alt="<?php echo $movie['title']; ?>"></a>
+        <?php endwhile; } ?>
       </div>
     </div>
     <button class="carousel-btn next" onclick="slideCarousel('comingSoon', 1)">❯</button>
