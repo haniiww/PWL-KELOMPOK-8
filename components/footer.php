@@ -94,7 +94,7 @@
 
 <footer class="footer">
     <div class="footer-container">
-        <!-- Tentang Kami -->
+        <!-- Tentang Kamdmanai -->
         <div class="footer-col">
             <h3>Company</h3>
             <ul>
