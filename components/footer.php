@@ -119,7 +119,7 @@
             <h3>Legal</h3>
             <ul>
                 <li><a href="privacy.php">Privacy Policy</a></li>
-                <li><a href="terms.php">Terms of Service</a></li>
+                <li><a href="terms-of-service.php">Terms of Service</a></li>
                 <li><a href="cookies.php">Cookies Policy</a></li>
             </ul>
         </div>
