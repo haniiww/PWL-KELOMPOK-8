@@ -4,6 +4,14 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 include('../User_input/db_Connection.php');
 
+// Check if user is logged in
+if (!isset($_SESSION['user_id'])) {
+    header("Location: ../pages/logIn.php");
+    exit();
+}
+
+$user_id = $_SESSION['user_id'];
+
 // Get movie ID from URL
 $movie_id = isset($_GET['id']) ? intval($_GET['id']) : 0;
 
@@ -14,6 +22,22 @@ $movie = mysqli_fetch_assoc($result);
 
 if (!$movie) {
     die("Movie not found.");
+}
+
+// Handle POST for selecting time and continuing
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $selected_time = htmlspecialchars($_POST['selected_time']);
+    if (!empty($selected_time)) {
+        // Insert into showtimes
+        $insert_query = "INSERT INTO showtimes (movie_id, user_id, time) VALUES (?, ?, ?)";
+        $stmt = $connection->prepare($insert_query);
+        $stmt->bind_param('iis', $movie_id, $user_id, $selected_time);
+        $stmt->execute();
+        $stmt->close();
+        // Redirect to reservation.php with movie_id and time
+        header("Location: reservation.php?movie_id=$movie_id&time=" . urlencode($selected_time));
+        exit();
+    }
 }
 ?>
 <!DOCTYPE html>
@@ -59,14 +83,17 @@ if (!$movie) {
       Regular 2D | Rp70.000
     </div>
 
-  <div class="time-buttons">
-    <div class="showtimes">
-      <button class="time-btn">10.30</button>
-      <button class="time-btn">13.30</button>
-      <button class="time-btn">16.30</button>
+  <form method="POST" action="">
+    <div class="time-buttons">
+      <div class="showtimes">
+        <button type="button" class="time-btn" data-time="10.30">10.30</button>
+        <button type="button" class="time-btn" data-time="13.30">13.30</button>
+        <button type="button" class="time-btn" data-time="16.30">16.30</button>
+      </div>
+      <input type="hidden" name="selected_time" id="selectedTime" value="">
+      <button type="submit" class="continue-btn">CONTINUE</button>
     </div>
-    <a class="continue-btn" id="continueLink" href="reservation.php">CONTINUE</a>
-  </div>
+  </form>
 </section>
 
 <?php include('../components/footer.php'); ?>

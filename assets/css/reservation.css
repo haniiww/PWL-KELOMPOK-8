@@ -90,18 +90,18 @@ body {
 .chair .row{
     width: 100%;
     display: flex;
-    
+    gap: 5px;
     align-items: center;
     justify-content: space-between;
     margin-top: 20px;
 }
 
-.chair .row li {
+.seat {
     position: relative;
     width: 20px;
     height: 13px;
     background: #ffffff;
-    list-style: none;
+    border: none;
     border-radius: 10%;
     cursor: pointer;
     transition: .3s linear;
@@ -111,29 +111,33 @@ body {
     justify-content: center;
     color: #fff;
     font-weight: 600;
-
 }
 
-.chair .row li:before {
+.seat:before {
     content: '';
     position: absolute;
     width: 100%;
     height: 4px;
     background: #ffffff;
     bottom: -8px;
-    border-radius: 5px;   
+    border-radius: 5px;
 }
 
-.chair .row li:hover {
+.seat:hover {
     background: #51C0A0;
-    color: #000;
-}   
+    color: #fff;
+}
 
-.chair .row li:nth-child(6) {
+.seat.selected {
+    background: #51C0A0;
+    color: #fff;
+}
+
+.chair .row .seat:nth-child(6) {
     margin-right: 20px;
 }
 
-.chair .row li:nth-last-child(6) {
+.chair .row .seat:nth-last-child(6) {
     margin-left: 20px;
 }
 
@@ -254,4 +258,23 @@ body {
   height: 5px;
   border-bottom: 2px dotted #777;
   opacity: .7;
+}
+
+.confirm-btn {
+    padding: 10px 20px;
+    background: #51C0A0;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.confirm-btn:hover {
+    background: #3e9b7f;
 }

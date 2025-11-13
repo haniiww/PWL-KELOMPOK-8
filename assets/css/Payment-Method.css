@@ -139,6 +139,30 @@ h2{
     transform: translate(-50%, -50%);
 }
 
+.confirm-btn {
+    background: linear-gradient(45deg, #00b894, #00cec9);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.confirm-btn:hover {
+    background: linear-gradient(45deg, #00cec9, #00b894);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 184, 148, 0.4);
+}
+
+.confirm-btn:active {
+    transform: translateY(0);
+}
+
 .steps {
     max-width: 1000px;
     display: flex;
