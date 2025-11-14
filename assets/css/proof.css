@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 :root {
-    --color: linear-gradient(0deg, transparent, rgb(184,184,184,.2));
+  --color: linear-gradient(0deg, transparent, rgb(184,184,184,.2));
 }
  
 body {
@@ -54,78 +54,78 @@ body {
 }
 
 .payment-container {
-    width: 85%;
-    margin: 50px auto;
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    font-family: 'Poppins', sans-serif;
+  width: 85%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-family: 'Poppins', sans-serif;
 }
 
 .ticket-info {
-    width: 50%;
+  width: 50%;
 }
 
 h2{
-    text-align: center;
+  text-align: center;
 }
 
 .ticket-info h2 {
-    font-size: 26px;
-    margin-bottom: 10px;
+  font-size: 26px;
+  margin-bottom: 10px;
 }
 
 .ticket-info hr {
-    border: none;
-    border-top: 1px solid rgba(255,255,255,0.4);
-     margin-bottom: 20px;
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.4);
+  margin-bottom: 20px;
 }
 
 .info-row {
-    display: flex;
-     gap: 20px;
-    margin: 10px 0;
-    font-size: 15px;
+  display: flex;
+  gap: 20px;
+  margin: 10px 0;
+  font-size: 15px;
 }
 
 .info-row span:first-child {
-    width: 80px;
+  width: 80px;
 }
 
 .qr-section {
-    width: 40%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .qr-img {
-    width: 220px;
-    height: 220px;
-    filter: brightness(1.2);
+  width: 220px;
+  height: 220px;
+  filter: brightness(1.2);
 }
 
 .steps {
-    max-width: 1000px;
-    display: flex;
-     align-items: center;
-    justify-content: space-between;
-    gap: 25px;
-    font-family: 'Poppins', sans-serif;
-    margin: 10px auto 20px;
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  font-family: 'Poppins', sans-serif;
+  margin: 10px auto 20px;
 }
 
 .step {
-    padding: 10px 30px;
-    border: 2px solid #fff;
-    background: transparent;
-     color: #fff;
-    border-radius: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: .3s ease;
-    flex: 1;
-    text-align: center;
+  padding: 10px 30px;
+  border: 2px solid #fff;
+  background: transparent;
+    color: #fff;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: .3s ease;
+  flex: 1;
+  text-align: center;
 }
 
 .step.active {

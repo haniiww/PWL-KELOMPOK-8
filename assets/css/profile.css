@@ -88,7 +88,6 @@ body {
     color: #4ecdc4;
 }
 
-/* ===== PROFILE SECTION ===== */
 .profile-container {
   max-width: 1150px; 
   margin: 0 auto;
@@ -98,7 +97,6 @@ body {
   font-family: 'Poppins', sans-serif;
   margin-top: 25px;
 }
-
 
 .profile-header {
     display: flex;
@@ -245,7 +243,6 @@ body {
     font-size: 14px;
 }
 
-/* ===== POPUP EDIT ===== */
 .popup {
   display: none;
   position: fixed;
@@ -256,7 +253,6 @@ body {
   z-index: 9999;
 }
     
-/* Box popup */
 .popup-content {
   background: #111;
   color: white;

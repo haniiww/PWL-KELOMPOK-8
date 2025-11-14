@@ -1,4 +1,3 @@
-<!-- components/footer.php -->
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
     
@@ -12,8 +11,8 @@
     .footer-container {
         display: flex;
         justify-content: center;
-        align-items: flex-start;  /* <-- Biar semua kolom rata atas */
-        gap: 90px;               /* Jarak antar kolom */
+        align-items: flex-start;  
+        gap: 90px;               
         flex-wrap: wrap;
         max-width: 1200px;
         margin: 0 auto;
@@ -54,7 +53,6 @@
         color: #504845ff;
     }
 
-    /* Sosial media */
     .social-media {
         display: flex;
         gap: 15px;
@@ -73,7 +71,6 @@
         transform: scale(1.1);
     }
 
-    /* Bagian bawah */
     .footer-bottom {
         text-align: center;
         margin-top: 30px;
@@ -101,7 +98,6 @@
 
 <footer class="footer">
     <div class="footer-container">
-        <!-- Tentang Kamdmanai -->
         <div class="footer-col">
             <h3>Company</h3>
             <ul>
@@ -115,7 +111,6 @@
             </div>
         </div>
 
-        <!-- Bantuan -->
         <div class="footer-col">
             <h3>Customer Support</h3>
             <ul>
@@ -124,7 +119,6 @@
             </ul>
         </div>
 
-        <!-- Kebijakan -->
         <div class="footer-col">
             <h3>Legal</h3>
             <ul>
@@ -134,10 +128,9 @@
             </ul>
         </div>
 
-        <!-- Ikuti Kami -->
         <div class="footer-col">
             <h3>Follow Us</h3>
-            <img src="../assets/images/header&footer/Untitled(11)_page-0001.jpg" alt="Logo" class="images">
+            <img src="../assets/images/header&footer/map.png" alt="Logo" class="images">
         </div>
     </div>
 
