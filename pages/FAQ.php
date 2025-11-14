@@ -87,12 +87,10 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  // accordion toggle
   document.querySelectorAll('.accordion .question').forEach(btn => {
     btn.addEventListener('click', () => {
       const item = btn.parentElement;
       const open = item.classList.toggle('open');
-      // close siblings
       if (open) {
         document.querySelectorAll('.accordion .accordion-item.open').forEach(sib => {
           if (sib !== item) sib.classList.remove('open');
@@ -101,7 +99,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // simple search filter
   const search = document.getElementById('faq-search');
   search.addEventListener('input', () => {
     const q = search.value.trim().toLowerCase();
