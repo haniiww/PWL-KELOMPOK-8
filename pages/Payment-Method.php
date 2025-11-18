@@ -35,11 +35,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (empty($payment_method)) {
         $error = "Please select a payment method.";
     } else {
-        // Insert into payments
-        $insert_query = "INSERT INTO payments (user_id, payment_method) VALUES (?, ?)";
-        $stmt = $connection->prepare($insert_query);
+        // Update full_reservations with payment_method
+        $update_query = "UPDATE full_reservations SET payment_method = ? WHERE user_id = ? AND movie_id = ? AND seat_number = ?";
+        $stmt = $connection->prepare($update_query);
         if ($stmt) {
-            $stmt->bind_param('is', $user_id, $payment_method);
+            $stmt->bind_param('siis', $payment_method, $user_id, $movie_id, $selected_seat);
             if ($stmt->execute()) {
                 $stmt->close();
                 // Redirect to proof.php with parameters
