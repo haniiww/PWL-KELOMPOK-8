@@ -83,7 +83,7 @@ if (!isset($_SESSION['user_id'])) {
 
     <div class="divider"></div>
 
-    <div class="menu-item">
+    <div class="menu-item" onclick="window.location.href='booking-history.php'">
         <img src="../assets/images/fotoprofile/material-symbols--history.png" alt="History Icon" />
         <div class="menu-text">
         <h3>Booking History</h3>
