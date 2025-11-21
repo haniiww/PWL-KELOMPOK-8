@@ -5,6 +5,25 @@
 
 A website to help movie lovers easily find the movies they want to watch and make seat reservations at their preferred cinemas without any hassle.
 
+## The Main Feature
+Our main feature is making a movie reservation without any complicated step.
+It is because you only need 4 step to make a movie reservation:
+1. On the Homepage, select one movie that you want to make a reservation.
+2. Then on the Movie Detail page, you can choose what time you want to watch the movie then press confirm.
+3. Then on the Seat Reservation page, you can choose your seat placement on that movie studio then press confirm.
+4. Then in the Card Method page, you can choose either pay with Mandiri or Debit/Credit card then press confirm.
+After all of that, you screen will show you reservation detail and a QR code that you can take and scan at your local Cinema.
+
+## Entity
+This is some of the entity that we have in our main feature:
+1. Movie Title
+2. Movie Description
+3. Movie Url (photo)
+4. User E-mail
+5. Movie Time
+6. Seat Number
+7. Payment Method
+
 ## Installation Tutorial
 ### Part 1 (zip download)
 1. Download this repository by clicking the Code button in the top right.
@@ -22,6 +41,12 @@ A website to help movie lovers easily find the movies they want to watch and mak
   <img width="1141" height="266" alt="image" src="https://github.com/user-attachments/assets/e05cc372-2a52-446f-876d-f5dd007861ee" />
 4. Left-click on one of the .php files (we recommend starting from the homepage).
 5. Right-click on the .php code page you just opened and click PHP Server: Serve project.
+
+## Database Instalation
+1. After you extract this repository, you have to find the "user_data.sql" file.
+   <img width="502" height="34" alt="image" src="https://github.com/user-attachments/assets/79330743-3489-4354-b652-ab2152e437c5" />
+
+
 
 ## Group Member
 - Edward H.R. ; Pizzaguy897 | https://github.com/Pizzaman897 (Group 8 Leader, Back End Developer)
