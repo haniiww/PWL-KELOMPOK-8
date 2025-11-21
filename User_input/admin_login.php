@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    // Hardcoded admin credentials
+    // Hardcoded admin credentialsdddddddddddd management
     $admin_email = 'Admin@JEF.com';
     $admin_password = 'Admin1234';
 

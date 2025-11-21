@@ -4,7 +4,19 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 include('../User_input/db_Connection.php');
 
-// No movie queries needed since movie management is removed
+// Fetch up to 16 movies randomly for Now Playing
+$now_playing_query = "SELECT id, title, image_url FROM movie_poster ORDER BY RAND() LIMIT 16";
+$now_playing_result = mysqli_query($connection, $now_playing_query);
+if (!$now_playing_result) {
+    die("Query failed: " . mysqli_error($connection));
+}
+
+// Fetch up to 16 movies randomly for Coming Soon
+$coming_soon_query = "SELECT id, title, image_url FROM movie_poster ORDER BY RAND() LIMIT 16";
+$coming_soon_result = mysqli_query($connection, $coming_soon_query);
+if (!$coming_soon_result) {
+    die("Query failed: " . mysqli_error($connection));
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -77,7 +89,10 @@ include('../User_input/db_Connection.php');
     </div>
 </section>
 
-<!-- Search box removed since no movies to search -->
+<div class="search-box">
+    <input type="text" placeholder="Search">
+    <img src="../assets/images/fotohomepage/tombolsearch.png" alt="search" class="search-icon">
+  </div>
   
 <div class="movie-section">
   <h2 class="movie-title">Now Playing</h2>

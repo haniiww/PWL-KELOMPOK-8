@@ -125,7 +125,7 @@ body {
         <div class="right-side">
             <ul class="nav-menu" id="navMenu">
                 <li><a href="../pages/homepage.php" class="nav-link">Home</a></li>
-                <li><a href="../pages/about_us.php" class="nav-link">About Us</a></li>
+                <li><a href="../pages/about-us.php" class="nav-link">About Us</a></li>
                 <li><a href="../pages/FAQ.php" class="nav-link">FAQ</a></li>
             </ul>
 

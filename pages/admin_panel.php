@@ -66,6 +66,7 @@ if (!isset($_SESSION['admin']) || $_SESSION['admin'] !== true) {
 
         <div class="admin-links">
             <a href="manage_users.php" class="admin-link">Manage Users</a>
+            <a href="manage_movies.php" class="admin-link">Manage Movies</a>
         </div>
     </div>
 </body>
