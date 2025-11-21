@@ -11,7 +11,7 @@ $user_id = $_SESSION['user_id'];
 include('../User_input/db_Connection.php');
 
 // Fetch booking history for the logged-in
-$query = "SELECT movie_title, show_date, seat_number, payment_method FROM full_reservations WHERE user_id = ? ORDER BY id DESC";
+$query = "SELECT movie_title, show_date, Time, seat_number, payment_method FROM full_reservations WHERE user_id = ? ORDER BY id DESC";
 $stmt = $connection->prepare($query);
 $stmt->bind_param('i', $user_id);
 $stmt->execute();
@@ -75,6 +75,7 @@ $stmt->close();
             <thead>
                 <tr>
                     <th>Movie Name</th>
+                    <th>Time</th>
                     <th>Date</th>
                     <th>Seat</th>
                     <th>Payment Method</th>
@@ -85,6 +86,7 @@ $stmt->close();
                     <tr>
                         <td><?php echo htmlspecialchars($booking['movie_title']); ?></td>
                         <td><?php echo htmlspecialchars($booking['show_date']); ?></td>
+                        <td><?php echo $booking['Time'] ? htmlspecialchars($booking['Time']) : '-'; ?></td>
                         <td><?php echo htmlspecialchars($booking['seat_number']); ?></td>
                         <td><?php echo htmlspecialchars($booking['payment_method']); ?></td>
                     </tr>
@@ -97,3 +99,4 @@ $stmt->close();
 <?php include('../components/footer.php'); ?>
 </body>
 </html>
+                    

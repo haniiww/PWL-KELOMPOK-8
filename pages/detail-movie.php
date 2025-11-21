@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $selected_time = htmlspecialchars($_POST['selected_time']);
     if (!empty($selected_time)) {
         // Insert into full_reservations
-        $insert_query = "INSERT INTO full_reservations (user_id, movie_id, movie_title, show_date) VALUES (?, ?, ?, ?)";
+        $insert_query = "INSERT INTO full_reservations (user_id, movie_id, movie_title, show_date, Time) VALUES (?, ?, ?, ?, NOW())";
         $stmt = $connection->prepare($insert_query);
         $stmt->bind_param('iiss', $user_id, $movie_id, $movie['title'], $selected_time);
         $stmt->execute();
