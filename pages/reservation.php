@@ -181,7 +181,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <button class="step active" data-step="1" onclick="window.location.href='reservation.php'">Reservation</button>
     <div class="line"></div>
 
-    <button class="step" data-step="2" onclick="window.location.href='Payment-Method.php'">Payment</button>
+    <button class="step" data-step="2" onclick="window.location.href='payment-method.php'">Payment</button>
     <div class="line"></div>
 
     <button class="step" data-step="3" onclick="window.location.href='proof.php'">Proof</button>
