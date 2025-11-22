@@ -238,6 +238,11 @@ body {
     font-size: 14px;
 }
 
+.arr-item a:visited {
+    color: inherit;  
+    text-decoration: none;
+}
+
 .popup {
   display: none;
   position: fixed;

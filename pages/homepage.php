@@ -89,11 +89,6 @@ if (!$coming_soon_result) {
     </div>
 </section>
 
-<div class="search-box">
-    <input type="text" placeholder="Search">
-    <img src="../assets/images/fotohomepage/tombolsearch.png" alt="search" class="search-icon">
-  </div>
-  
 <div class="movie-section">
   <h2 class="movie-title">Now Playing</h2>
   <div class="carousel-wrapper">
