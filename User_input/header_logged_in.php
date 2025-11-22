@@ -17,9 +17,9 @@ if (isset($_SESSION['user_id'])) {
     $stmt->close();
 }
 ?>
+
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -67,24 +67,37 @@ body {
     list-style: none;
     gap: 30px;
     margin: 0;
-    padding: 0;
 }
 
 .nav-link {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
+    font-weight: lighter;
     font-size: 16px;
-    padding: 8px 12px;
-    border-radius: 6px;
     transition: all 0.3s ease;
+    position: relative;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
 }
 
 .nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    transform: translateY(-2px);
+    color: #4ecdc4;
 }
-
-
 
 .right-side {
     display: flex;
@@ -111,8 +124,6 @@ body {
     font-weight: 600;
     margin-right: 10px;
 }
-
-
 </style>
 
 <header class="header">

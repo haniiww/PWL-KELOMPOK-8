@@ -58,11 +58,6 @@ body {
     transition: all 0.3s ease;
 }
 
-.menu a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    transform: translateY(-2px);
-}
-
 .tombol-auth {
     display: flex;
     gap: 15px;
@@ -76,13 +71,8 @@ body {
     font-size: 14px;
     font-weight: 600;
     border: 2px solid white;
-    background-color: transparent;
     color: white;
     transition: all 0.3s ease;
-}
-
-.btn:hover {
-    background-color: rgba(255, 255, 255, 0.15);
 }
 </style>
 
