@@ -30,10 +30,10 @@ if (!$movie) {
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $selected_seat = htmlspecialchars($_POST['selected_seat']);
     if (!empty($selected_seat)) {
-        // Insert into seats
-        $insert_query = "INSERT INTO seats (user_id, seat_position) VALUES (?, ?)";
-        $stmt = $connection->prepare($insert_query);
-        $stmt->bind_param('is', $user_id, $selected_seat);
+        // Update full_reservations with seat_number
+        $update_query = "UPDATE full_reservations SET seat_number = ? WHERE user_id = ? AND movie_id = ? AND show_date = ?";
+        $stmt = $connection->prepare($update_query);
+        $stmt->bind_param('siis', $selected_seat, $user_id, $movie_id, $selected_time);
         $stmt->execute();
         $stmt->close();
         // Redirect to Payment-Method.php with movie_id, time, seat, day, title, image

@@ -7,6 +7,7 @@ if (!isset($_SESSION['user_id'])) {
     exit();
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -80,7 +81,6 @@ if (!isset($_SESSION['user_id'])) {
     <div class="arrangement">
         <h3>Arrangement</h3>
         <div class="arr-item"><i class="fa-solid fa-link"></i> Account Security</div>
-        <div class="arr-item"><i class="fa-solid fa-globe"></i> Language</div>
         <div class="arr-item">
             <i class="fa-solid fa-phone"></i>
             <a href="contact.php">Support & Feedback</a>
