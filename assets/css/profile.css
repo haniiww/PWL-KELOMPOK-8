@@ -120,6 +120,7 @@ body {
     object-fit: cover;
 }
 
+/* overlay saat hover */
 .profile-pic:hover::after {
     content: "";
     position: absolute;
@@ -241,6 +242,15 @@ body {
     border-radius: 50%;
     padding: 8px;
     font-size: 14px;
+}
+
+.arr-item a {
+  color: inherit;            
+  text-decoration: none;    
+}
+
+.arr-item a:visited {
+  color: inherit;           
 }
 
 .popup {
