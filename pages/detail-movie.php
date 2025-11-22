@@ -98,6 +98,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <?php include('../components/footer.php'); ?>
 <script src="../assets/js/detail-movie.js"></script>
-
 </body>
 </html>

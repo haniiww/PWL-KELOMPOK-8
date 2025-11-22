@@ -120,5 +120,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <button class="step" data-step="3" onclick="window.location.href='proof.php'">Proof</button></div>
     <?php include '../components/footer.php' ?>
+    <script src="../assets/js/payment-method.js"></script>
 </body>
 </html>
