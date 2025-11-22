@@ -62,7 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>Movie Reservation</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/Payment-Method.css">
+    <link rel="stylesheet" href="../assets/css/payment.css">
 </head><body>
 <div class="movie-hero">
   <?php include '../User_input/header.php' ?>
@@ -115,10 +115,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <button class="step" data-step="1" onclick="window.location.href='reservation.php'">Reservation</button>
     <div class="line"></div>
 
-    <button class="step active" data-step="2" onclick="window.location.href='payment-method.php'">Payment</button>
+    <button class="step active" data-step="2" onclick="window.location.href='payment.php'">Payment</button>
     <div class="line"></div>
 
     <button class="step" data-step="3" onclick="window.location.href='proof.php'">Proof</button></div>
     <?php include '../components/footer.php' ?>
+    <script src="../assets/js/payment.js"></script>
 </body>
 </html>
