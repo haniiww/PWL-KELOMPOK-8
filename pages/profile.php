@@ -69,6 +69,7 @@ if (!isset($_SESSION['user_id'])) {
 
         <div class="divider"></div>
 
+        <a href="booking-history.php" style="text-decoration: none; color: inherit;">
         <div class="menu-item">
             <img src="../assets/images/fotoprofile/material-symbols--history.png" alt="History Icon" />
             <div class="menu-text">
@@ -76,7 +77,9 @@ if (!isset($_SESSION['user_id'])) {
                 <p>Check your previous ticket orders</p>
             </div>
         </div>
+        </a>
     </div>
+
 
     <div class="arrangement">
         <h3>Arrangement</h3>

@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt->execute();
         $stmt->close();
         // Redirect to Payment-Method.php with movie_id, time, seat, day, title, image
-        header("Location: Payment-Method.php?movie_id=$movie_id&time=" . urlencode($selected_time) . "&seat=" . urlencode($selected_seat) . "&day=" . urlencode($selected_day) . "&title=" . urlencode($movie['title']) . "&image=" . urlencode($movie['image_url']));
+        header("Location: payment.php?movie_id=$movie_id&time=" . urlencode($selected_time) . "&seat=" . urlencode($selected_seat) . "&day=" . urlencode($selected_day) . "&title=" . urlencode($movie['title']) . "&image=" . urlencode($movie['image_url']));
         exit();
     }
 }

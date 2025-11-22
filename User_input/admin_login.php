@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($email === $admin_email && $password === $admin_password) {
         $_SESSION['admin'] = true;
-        header("Location: ../pages/admin_panel.php");
+        header("Location: ../Admin/admin_panel.php");
         exit();
     } else {
         echo "Invalid admin credentials.";
