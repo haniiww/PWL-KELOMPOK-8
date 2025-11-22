@@ -69,6 +69,12 @@ window.addEventListener("click", (e) => {
 // Change profile picture
 // =========================
 
+const savedPic = localStorage.getItem("tempProfilePic");
+if (savedPic) {
+  const img = document.getElementById("profileImage");
+  if (img) img.src = savedPic;
+}
+
 const profilePicWrapper = document.getElementById("profilePicWrapper");
 const profileInput = document.getElementById("profileInput");
 const profileImage = document.getElementById("profileImage");
@@ -100,14 +106,13 @@ if (profilePicWrapper && profileInput && profileImage) {
       return;
     }
 
-    // preview langsung (base64)
     const reader = new FileReader();
     reader.onload = function (e) {
       profileImage.src = e.target.result;
+      localStorage.setItem("tempProfilePic", e.target.result);
     };
     reader.readAsDataURL(file);
 
-    // upload via fetch(FormData)
     const formData = new FormData();
     formData.append("profile_picture", file);
     formData.append("user_id", userId);
@@ -120,9 +125,12 @@ if (profilePicWrapper && profileInput && profileImage) {
     .then(response => {
       if (response.success) {
         alert("Foto profil berhasil diunggah!");
+
         if (response.url) {
           profileImage.src = response.url;
+          localStorage.removeItem("tempProfilePic");
         }
+
       } else {
         alert("Upload gagal: " + (response.message || "Unknown error"));
         location.reload(); 
@@ -135,3 +143,4 @@ if (profilePicWrapper && profileInput && profileImage) {
     });
   });
 }
+
