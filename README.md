@@ -46,7 +46,7 @@ This is some of the entity that we have in our main feature:
 1. After you extract this repository and open it in VSC, you have to find the "user_data.sql" file.
    <img width="517" height="40" alt="image" src="https://github.com/user-attachments/assets/89384c1c-f105-4b93-a07c-2ad32f65cb62" />
 2. Now go to your laragon and click the database button.
-   <img width="517" height="40" alt="image" src="https://github.com/user-attachments/assets/9767a017-3896-4983-8130-4caf862f9479" />
+   <img width="827" height="70" alt="image" src="https://github.com/user-attachments/assets/05b6d75d-ffff-4226-9c31-e0c534f84d40" />
 3. After you login into your phpMyAdmin, you have to click on the "new +" button to add new database and don't forget to name it "user_data".
    <img width="303" height="177" alt="image" src="https://github.com/user-attachments/assets/db919f84-acb7-49da-843b-a944b5bb3d43" />
 4. After that, go to the import menu on the top.
