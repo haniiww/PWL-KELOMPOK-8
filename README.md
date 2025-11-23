@@ -60,8 +60,8 @@ This is some of the entity that we have in our main feature:
 
 ## Admin Access
 To access the Admin page, you need to http://localhost:[your localhost id]/Admin/admin_login.php
-E-mail : Admin@JEF.com
-Password : Admin1234
+1. E-mail : Admin@JEF.com
+2. Password : Admin1234
 
 ## Group Member
 - Edward H.R. ; Pizzaguy897 | https://github.com/Pizzaman897 (Group 8 Leader, Back End Developer)
