@@ -59,7 +59,7 @@ This is some of the entity that we have in our main feature:
    <img width="233" height="77" alt="image" src="https://github.com/user-attachments/assets/93e27821-8cd5-45c5-b439-6785e1671372" />
 
 ## Admin Access
-To access the Admin page, you need to http://localhost:[your localhost id]/Admin/admin_login.php
+To access the Admin page, you need to http://localhost: [your localhost id]/Admin/admin_login.php
 1. E-mail : Admin@JEF.com
 2. Password : Admin1234
 
